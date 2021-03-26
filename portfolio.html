@@ -13,17 +13,26 @@
 </head>
 <body>
 <!--------HEADER--------->
-   <header class="header">
-        <div class="container">
+<header class="header">
+    <div class="container">
+        <div class="header-menu">
             <a class="logo" href="./index.html"> Web<span class="logo-black">Studio</span>
             </a>
+            <button class="menu-button is-open">
+              <svg class="menu-button-svg" width="40" height="40">
+                <use class="icon-open" href="./images/sprite-main.svg#icon-menu-open"></use>
+                <use class="icon-close" href="./images/sprite-main.svg#menu-close"></use>
+              </svg>
+            </button>
+          </div>
+        <div class="header-wraper">
             <nav class="navi">
                 <ul class="navi-list">
                     <li class="item">
                         <a class="link" href="./index.html">Студия</a>
                     </li>
                     <li class="item">
-                        <a class="link current" href="./portfolio.html">Портфолио</a>
+                        <a class="link  current" href="./portfolio.html">Портфолио</a>
                     </li>
                     <li class="item">
                         <a class="link" href="">Контакты</a>
@@ -46,10 +55,10 @@
                     </a>
                 </li>
             </ul>
-            </ul>
         </div>
-    </header>
-        <main>
+    </div>
+</header>
+<main>
 <!-------------------Button------------------>
             <section class="section partfolio">
                 <div class="container">
