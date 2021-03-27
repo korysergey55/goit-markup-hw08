@@ -1,55 +1,70 @@
-/* ====================== HERO ==============================================*/
+/* ====================== hero-mobile =====================================*/
 .overlay{
-  min-height: 600px;
-  padding-bottom: 95px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0;
 
-  background-image:url(../images/hero/img-overlay-bg.png),
-  url(../images/hero/img-overlay.jpg); 
+  width: 480px;
+  min-height: 400px;
+  text-align: center;
+  background-image: url(../images/hero/img-overlay-bg-mobile.png), url(../images/hero/img-overlay-mobile.jpg);
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
   background-color:  #C4C4C4;
-  
 }
-.hero{
-  text-align: center;
+/* ====================== HERO ==============================================*/
+// .overlay{
+//   min-height: 600px;
+//   padding-bottom: 95px;
 
-  .title {
-    margin: 0;
-    padding-top: 200px;
-    min-width: 696px;
-      
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .main-button {
-    margin-top: 30px;
-    padding-bottom: 200px;
-    
-    min-width: 200px;
-    padding: 10px 32px;
-    border-radius: 4px;
-    border: transparent;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.9;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #ffffff;
-    background-color: #2196f3;
-    text-decoration: none;
+//   background-image:url(../images/hero/img-overlay-bg.png),
+//   url(../images/hero/img-overlay.jpg); 
+//   background-size: cover;
+//   background-position: top left;
+//   background-repeat: no-repeat;
+//   background-color:  #C4C4C4;
   
-    &:hover,
-    &:focus {
-      outline: none;
-      cursor: pointer;
-    }
-  }
-}
+// }
+// .hero{
+//   text-align: center;
+
+//   .title {
+//     margin: 0;
+//     padding-top: 200px;
+//     min-width: 696px;
+      
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.3;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: #ffffff;
+//   }
+//   .main-button {
+//     margin-top: 30px;
+//     padding-bottom: 200px;
+    
+//     min-width: 200px;
+//     padding: 10px 32px;
+//     border-radius: 4px;
+//     border: transparent;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+//     font-weight: bold;
+//     font-size: 16px;
+//     line-height: 1.9;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     color: #ffffff;
+//     background-color: #2196f3;
+//     text-decoration: none;
+  
+//     &:hover,
+//     &:focus {
+//       outline: none;
+//       cursor: pointer;
+//     }
+//   }
+// }
