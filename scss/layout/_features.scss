@@ -1,35 +1,87 @@
-/* ====================== FEATURES ===========================================*/
+/* ====================== FEATURES-MOBILE ===========================================*/
 .features-list {
-  display: flex;
-  justify-content: space-between;
-  
-  .text {
-    margin-top: 10px;
+  .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features-logo{
+    display: flex;
+    align-items: center;
+    min-width: 450px;
+    height: 120px;
+    border-radius: 4px;
+    border: 2px solid #F5F4FA;
+    background-color: #F5F4FA;
+
+    &-svg{
+      display:block;
+      justify-content:center;
+      align-items:center;
+      margin:auto;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  .title-features-list{
+    width: 100%;
+    margin-top: 30px;
+    text-transform: uppercase;
+  }
+  .text{
+    margin-top:10px;
     margin-bottom: 0;
     line-height: 1.71;
     color: $secindary-text-color;
   }
 }
-.title-features-list {
-  margin: 0;
-  padding-top: 30px;
-  text-transform: uppercase;
+/* ====================== FEATURES-TABLET ===========================================*/
+@media screen and (min-width: 768px){
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .features-logo{
+      min-width: 354px;
+      min-height: 120px;
+      }
+    .item{
+      max-width: 354px;
+      
+      &:nth-child(2n+1){
+        margin-right: 30px;
+      }
+      &:nth-child(-n+2){
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
-.features-list .item:not(:last-child) {
-  margin-right: 30px;
+/* ====================== FEATURES-TABLET ===========================================*/
+@media screen and (min-width: 1200px){
+  .features-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  
+    .features-logo{
+      display: block;
+      min-width: 270px;
+      min-height: 120px;
+    }
+    .item{
+      max-width: 270px;
+      
+      &:nth-child(-n+3){
+          margin-right: 30px;
+      }
+      &:nth-child(-n+2){
+        margin-bottom: 0;
+      }
+    }
+    .title-features-list{
+      text-align:left;
+    }
+  }
 }
-.features-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    
-  margin: 30px auto;
-  width: 100%;
-  height: 120px;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-}
-.features-logo-svg {
-  display: block;
-  margin: 0 auto;
-} 
