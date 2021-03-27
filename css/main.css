@@ -101,12 +101,23 @@ body {
 }
 .title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
+  margin-bottom: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
 /* ====================== Components ================================*/
 .logo {
   display: block;
@@ -601,11 +612,6 @@ body {
   }
 }
 /* ====================== FEATURES-MOBILE ===========================================*/
-.features-list .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .features-list .features-logo {
   display: flex;
   align-items: center;
@@ -656,10 +662,9 @@ body {
     margin-bottom: 30px;
   }
 }
-/* ====================== FEATURES-TABLET ===========================================*/
+/* ====================== FEATURES-DASKTOP ===========================================*/
 @media screen and (min-width: 1200px) {
   .features-list {
-    display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
   }
@@ -691,11 +696,6 @@ body {
   .specialization {
     display: block;
     padding-top: 0;
-  }
-  .specialization .title {
-    margin-bottom: 0px;
-    margin-top: 0;
-    padding-bottom: 50px;
   }
   .specialization .list {
     display: flex;
@@ -735,15 +735,6 @@ body {
   background-color: #F5F4FA;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.team .title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 1.178;
-  text-align: center;
-  color: #212121;
 }
 
 .team-list {
@@ -867,22 +858,21 @@ body {
     margin-right: 30px;
   }
 }
-/* ====================== Clients ==========================================*/
-.clients .title {
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
+/* ====================== CLIENTS-MOBILE ==========================================*/
 .clients-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+.clients-list .item:nth-child(-n+4) {
+  margin-bottom: 30px;
 }
 
 .link-clients-logo {
   display: flex;
-  width: 170px;
-  height: 90px;
+  min-width: 210px;
+  min-height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
@@ -907,6 +897,31 @@ body {
   fill: #2196f3;
 }
 
+/* ====================== CLIENTS-TABLET ==========================================*/
+@media screen and (min-width: 768px) {
+  .link-clients-logo {
+    min-width: 226px;
+  }
+
+  .clients-list .item:nth-child(n+4) {
+    margin-bottom: 0;
+  }
+}
+/* ====================== CLIENTS-DASKTOP ==========================================*/
+@media screen and (min-width: 1200px) {
+  .link-clients-logo {
+    min-width: 170px;
+  }
+
+  .clients-list {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .clients-list .item:nth-child(-n+5) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
 /* ======================fOOTER=========================================*/
 .footer {
   padding-bottom: 60px;
