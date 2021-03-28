@@ -344,6 +344,10 @@ body {
 
 /* ===========LAYOUT===========*/
 /* ====================== HEADER-MOBILE =====================================*/
+.header {
+  border: 1px solid #ECECEC;
+}
+
 .header-menu {
   position: relative;
   display: flex;
@@ -1122,22 +1126,19 @@ body {
     min-width: 200px;
   }
 }
-/* ======================Partfolio=======================================*/
-/* ======================Button-Partfolio=======================================*/
+/* ====================== PARTFOLIO-MOBILE =======================================*/
+/* ======================PARTFOLIO-BUTTONS-MOBILE =======================================*/
 .button-list {
   display: flex;
-  justify-content: center;
-  padding-bottom: 50px;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-
-.button-list .item:not(:last-child) {
+.button-list .button {
   margin-right: 8px;
-}
-
-.button {
-  margin-right: 8px;
+  margin-bottom: 15px;
   padding: 6px 22px;
-  height: 38px;
+  min-height: 38px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -1147,26 +1148,42 @@ body {
   color: #212121;
   border: none;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
+  transition: color, background-color 250ms, 250ms cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button:hover, .button:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+.button-list .button:hover, .button-list .button:focus {
+  color: #FFFFFF;
+  background-color: #2196F3;
   outline: none;
-  cursor: pointer;
 }
 
-/* ======================Main-Partfolio=======================================*/
+/* ======================PARTFOLIO-BUTTONS-TABLET =======================================*/
+@media screen and (min-width: 768px) {
+  .button-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .button-list .button {
+    margin-bottom: 0;
+  }
+}
+/* ======================PARTFOLIO-BUTTONS-DASKTOP======================================*/
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
+  }
+}
+/* ======================PARTFOLIO-MAIN-MOBILE======================================*/
 .partfolio-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .partfolio-list .title {
   margin-top: 20px;
   margin-bottom: 4px;
   margin-left: 24px;
+  margin-right: 24px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -1175,55 +1192,24 @@ body {
 }
 .partfolio-list .text {
   display: block;
+  margin-top: 4px;
   margin-bottom: 20px;
   margin-left: 24px;
+  margin-right: 24px;
   font-size: 16px;
-  text-align: start;
+  text-align: left;
   line-height: 1.9;
   color: #757575;
 }
 .partfolio-list .item {
-  width: calc((100% - 60px) / 3);
+  border: 1px solid #EEEEEE;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.partfolio-list .item:not(:last-child) {
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 .partfolio-list .item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.partfolio-list .item:nth-child(3n+3) {
-  margin-right: 0;
-}
 
-/* ====================== Переходы =======================================*/
-.thumb-text-cart {
-  position: relative;
-  width: 370px;
-  height: 294px;
-  overflow: hidden;
-}
-
-.text-cart {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  padding: 63px 24px;
-  margin: 0;
-  width: 370px;
-  height: 294px;
-  display: block;
-  text-align: left;
-  font-size: 18px;
-  line-height: 1.5;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 100ms;
-}
-
-.item:hover .text-cart {
-  transform: translateY(0%);
-}/*# sourceMappingURL=main.css.map */
+/* ======================Button-Partfolio=======================================*//*# sourceMappingURL=main.css.map */
