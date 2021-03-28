@@ -407,6 +407,9 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+.header-wraper.mobile-open {
+  display: block;
+}
 
 .navi-list .link {
   font-weight: 500;
