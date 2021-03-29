@@ -81,6 +81,7 @@
     color: $secindary-text-color;
   }   
   .item{
+    width: 100%;
     padding-bottom: 20px;
     border: 1px solid #EEEEEE;
     transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
