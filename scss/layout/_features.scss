@@ -4,7 +4,8 @@
   .features-logo{
     display: flex;
     align-items: center;
-    min-width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 120px;
     border-radius: 4px;
     border: 2px solid #F5F4FA;
@@ -39,8 +40,8 @@
     flex-wrap: wrap;
 
     .features-logo{
-      min-width: 354px;
-      min-height: 120px;
+      max-width: 354px;
+      max-height: 120px;
       }
     .item{
       max-width: 354px;
@@ -62,8 +63,7 @@
   
     .features-logo{
       display: block;
-      min-width: 270px;
-      min-height: 120px;
+      max-width: 270px;
     }
     .item{
       max-width: 270px;
