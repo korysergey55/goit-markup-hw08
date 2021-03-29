@@ -18,15 +18,19 @@
             <div class="header-menu">
                 <a class="logo" href="./index.html"> Web<span class="logo-black">Studio</span>
                 </a>
-                <button class="menu-button is-open"  data-menu-button>
-                  <svg class="menu-button-svg" width="40" height="40">
+                <button class="mobile-button-open" type="button" data-menu-open>
+                  <svg class="mobile-open-svg" width="40" height="40">
                     <use class="icon-open" href="./images/sprite-main.svg#icon-menu-open"></use>
-                    <use class="icon-close" href="./images/sprite-main.svg#menu-close"></use>
-                  </svg>
+                 </svg>
                 </button>
               </div>
             <div class="header-wraper" data-menu>
                 <nav class="navi">
+                    <button class="mobile-button-close" type="button" data-menu-close>
+                        <svg class="mobile-close-svg" width="40" height="40">
+                            <use class="icon-close" href="./images/sprite-main.svg#menu-close"></use>
+                        </svg>
+                    </button>
                     <ul class="navi-list">
                         <li class="item">
                             <a class="link current" href="./index.html">Студия</a>
@@ -41,18 +45,32 @@
                 </nav>
                 <ul class="header-contact">
                     <li class="item">
-                        <a class="link" href="mailto:info@devstudio.com">
+                        <a class="link mail" href="mailto:info@devstudio.com">
                             <svg class="icon-header" width="16" height="15">
                                 <use href="./images/sprite-main.svg#icon-mail"></use>
                               </svg> info@devstudio.com
                         </a>
                         </li>
                     <li class="item">
-                        <a class="link" href="tel:+380961111111">
+                        <a class="link tel" href="tel:+380961111111">
                             <svg class="icon-header" width="16" height="15">
                                 <use href="./images/sprite-main.svg#icon-tel"></use>
                               </svg> +38 096 111 11 11
                         </a>
+                    </li>
+                </ul>
+                <ul class="header-social">
+                    <li class="header-social-item">
+                        <a href="#" class="header-social-link">Instagram</a>
+                    </li>
+                    <li class="header-social">
+                        <a href="#" class="header-social-link">Twitter</a>
+                    </li>
+                    <li class="header-social">
+                        <a href="#" class="header-social-link">Facebook</a>
+                    </li>
+                    <li class="header-social">
+                        <a href="#" class="header-social-link">LinkedIn</a>
                     </li>
                 </ul>
             </div>
@@ -155,9 +173,12 @@
                 <ul class="team-list">
                     <li class="item">
                         <picture>
-                            <source srcset="./images/team/k1.jpg 1x, ./images/team/k1@2x.jpg 2x" media="(min-width: 1200px)">
-                            <source srcset="./images/team/tablet/k1-tablet.jpg 1x, ./images/team/tablet/k1-tablet@2x.jpg 2x" media="(min-width: 768px)">
-                            <source srcset="./images/team/mobile/k1-mobile.jpg 1x, ./images/team/mobile/k1-mobile@2x.jpg 2x" media="(min-width: 480px)">
+                            <source srcset="./images/team/k1.jpg 1x, ./images/team/k1@2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+                            <source srcset="./images/team/tablet/k1-tablet.jpg 1x, ./images/team/tablet/k1-tablet@2x.jpg 2x" 
+                            media="(min-width: 768px)">
+                            <source srcset="./images/team/mobile/k1-mobile.jpg 1x, ./images/team/mobile/k1-mobile@2x.jpg 2x"
+                            media="(min-width: 480px)">
                             <img class="team-face" src="./images/team/k1.jpg"  alt="сотрудник Игорь Демьяненко"/>
                         </picture>
                         <h3 class="title">Игорь Демьяненко</h3>
