@@ -881,7 +881,7 @@ body {
 .team-list .social-list .social-link:hover, .team-list .social-list .social-link:focus {
   background-color: #2196f3;
 }
-.team-list .social-list .social-link .social-logo {
+.team-list .social-list .social-logo {
   display: block;
   justify-content: center;
   align-items: center;
@@ -1083,6 +1083,7 @@ body {
 }
 .footer-social-list .footer-social-link:hover, .footer-social-list .footer-social-link:focus {
   background-color: #2196f3;
+  cursor: pointer;
 }
 
 /* ======================FOOTER-FORM-MOBILE=======================================*/

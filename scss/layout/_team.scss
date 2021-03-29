@@ -1,13 +1,13 @@
 /* ====================== TEAM-MOBILE==========================================*/
-.team{
+.team {
   background-color: #F5F4FA;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.team-list{
+.team-list {
   margin: 0;
 
-  .item{
+  .item {
     width: 100%;
     max-width: 450px;
     padding-bottom: 24px;
@@ -15,11 +15,11 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
       
-    &:nth-child(-n+3){
+    &:nth-child(-n+3) {
       margin-bottom: 30px;
     }
   }
-  .title{
+  .title {
     margin-top:30px;
     margin-bottom:10px;
     margin-left: auto;
@@ -61,6 +61,7 @@
       &:focus{
         background-color: $akcent-color;
       }
+    }
     .social-logo {
       display: block;
       justify-content: center;
@@ -71,12 +72,11 @@
       height: 20px;
       fill:#AFB1B8;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
     }
   }
 }
-.social-link:hover  .social-logo,
-.social-link:focus  .social-logo{
+.social-link:hover .social-logo,
+.social-link:focus .social-logo{
   fill:white;
 }
 /* ====================== TEAM-TABLET==========================================*/
